@@ -1,0 +1,39 @@
+@import '../../../styles/variables';
+
+.time {
+  color: #946e86;
+  font-size: 20px;
+}
+
+.wrapper {
+  > div {
+    margin-bottom: 30px;
+    background-color: $purple;
+    color: white;
+    padding: 16px 20px;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 20px;
+
+
+    > a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &.finished {
+      background-color: $dark-purple;
+
+    }
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: $dark-purple;
+    margin-bottom: 30px;
+  }
+}

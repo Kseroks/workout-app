@@ -1,0 +1,46 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/animations";
+
+.wrapper {
+  position: relative;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: absolute;
+    top: calc(100% + 14px);
+    right: 0;
+    background-color: honeydew;
+    padding: 10px 12px;
+    color: black;
+    font-size: 14px;
+    box-shadow: $bx-16;
+    border-radius: 10px 0 10px 10px;
+    display: none;
+    animation: opacity 0.4s;
+
+    &.show {
+      display: block;
+    }
+
+    > ul {
+      list-style: none;
+
+      a {
+        color: black;
+        transition: color 0.2s ease;
+        text-decoration: none;
+
+        &:hover, &:active {
+          color: $accent;
+          margin: 4px 0px;
+        }
+      }
+    }
+  }
+}

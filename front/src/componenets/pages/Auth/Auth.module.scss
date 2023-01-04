@@ -1,0 +1,24 @@
+.wrapper {
+  padding: 50px 90px;
+  text-align: center;
+}
+
+.wrapperBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  div {
+    &:last-child > button {
+      opacity: 0.8;
+      background-color: #b53471;
+      transition: opacity 0.15s;
+
+      &:hover {
+        background-color: purple;
+        opacity: 1;
+      }
+    }
+  }
+
+}

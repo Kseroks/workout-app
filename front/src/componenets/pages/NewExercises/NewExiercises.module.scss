@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.wrapper {
+  padding: 50px 90px;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  transition: border-bottom 0.4s ease;
+
+
+  > img {
+    margin-right: 15px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+
+    &.active {
+      border-color: $accent;
+    }
+  }
+}

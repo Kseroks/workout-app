@@ -1,0 +1,65 @@
+@import "../../../styles/variables";
+
+.heading {
+  display: flex;
+  align-items: center;
+
+  > img {
+    margin-right: 9px;
+  }
+}
+
+.wrapper {
+  border-radius: 10px;
+  background-color: $dark-purple;
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 90%;
+
+  > row {
+    display: flex;
+    align-items: center;
+
+    > div {
+      width: 30%;
+      padding: 15px;
+      color: white;
+      font-size: 16px;
+
+      > input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 27px;
+      }
+
+      i > {
+        font-style: normal;
+      }
+
+      &:nth-child(2) {
+        width: 50%;
+        border-left: 1px solid purple;
+        border-right: 1px solid purple;
+      }
+    }
+
+    &:nth-child {
+      border-bottom: 1px solid purple;
+    }
+
+    &.completed {
+      > div {
+        color: $accent;
+      }
+
+      i, input {
+        text-decoration: line-through;
+      }
+    }
+
+    .opacity {
+      opacity: 0.7;
+    }
+  }
+}
